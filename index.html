@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LABERINTO CHEVERE</title>
+  </head>
+  <body>
+		<section>
+		<div id="contenido">
+		<article>
+		<div id="tiempo">
+		<h5 id="titulo">
+		<span>Horas</span>
+		<span>Minutos</span>
+		<span>Segundos</span>
+		</h5>
+		<h2 id="contador">
+		<span id="horas">00</span>
+		<span id="minutos">00</span>
+		<span id="segundos">00</span>
+		</h2>
+		</div>
+		</article>
+	</div></section>
+	<script src="time.js"></script>
+
+    <h1 class="title">LABERINTO</h1>
+
+    <div class="complete">
+      <h3>LABERINTO COMPLETADO.</h3>
+      <button class="replay" id="submit">JUGAR DE NUEVO</button>
+      <button class="close" id="submit">CERRAR</button>
+    </div>
+
+      <form id="settings" action="">
+        <p>TAMAÑO DEL LABERINTO</p>
+        <input id="size" type="number" value="500"/></br>
+        <p>FILAS/COLUMNAS</p>
+        <input id="number" type="number" value="20" /></br>
+        <input id="submit" type="submit" value="GENERAR LABERINTO">
+      </form>
+
+    <canvas class="maze"></canvas>
+		<audio autoplay id="soundtrack" >
+			<source src="sumeru.mp3" >
+
+		</audio>
+
+    <script src="maze.js"></script>
+    <script src="settings.js"></script>
+  </body>
+</html>
